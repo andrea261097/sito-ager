@@ -1,4 +1,4 @@
-// Ager — script condiviso
+// Acta — script condiviso
 
 document.addEventListener("DOMContentLoaded", function () {
   // Menu mobile
