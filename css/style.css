@@ -252,6 +252,17 @@ p {
   mix-blend-mode: screen;
 }
 
+.hero-fade {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 260px;
+  background: linear-gradient(to bottom, rgba(238, 242, 232, 0) 0%, var(--verde-tenue) 100%);
+  z-index: 3;
+  pointer-events: none;
+}
+
 .hero-content {
   position: relative;
   z-index: 2;
@@ -541,6 +552,15 @@ section {
   opacity: 0.8;
 }
 
+.col-media img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  border-radius: var(--raggio);
+  box-shadow: var(--ombra);
+  display: block;
+}
+
 /* ---------- CTA finale ---------- */
 
 .cta-final {
@@ -601,12 +621,24 @@ section {
   padding: 70px 0;
 }
 
-.percorso-blocco img {
+.percorso-blocco img,
+.percorso-blocco video {
   width: 100%;
   border-radius: var(--raggio);
   box-shadow: var(--ombra);
-  aspect-ratio: 4 / 5;
   object-fit: cover;
+  display: block;
+  background: #0d2036;
+}
+
+.percorso-blocco img {
+  aspect-ratio: 4 / 5;
+}
+
+.percorso-blocco video {
+  aspect-ratio: 9 / 16;
+  max-height: 560px;
+  margin: 0 auto;
 }
 
 .percorso-blocco h2 {
@@ -627,6 +659,25 @@ section {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 22px;
+}
+
+.callout {
+  border-left: 4px solid var(--verde);
+  background: var(--verde-tenue);
+  border-radius: 0 var(--raggio-piccolo) var(--raggio-piccolo) 0;
+  padding: 18px 22px;
+  margin-top: 18px;
+}
+
+.callout p {
+  color: var(--testo);
+  font-size: 0.98rem;
+}
+
+p.testo-forte {
+  font-weight: 700;
+  color: var(--verde-scuro);
+  font-size: 1.08rem;
 }
 
 /* ---------- Contatti ---------- */
