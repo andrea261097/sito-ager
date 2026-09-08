@@ -241,17 +241,6 @@ p {
     linear-gradient(100deg, rgba(13,32,54,0.55) 0%, rgba(13,32,54,0.05) 55%);
 }
 
-.hero-grid-overlay {
-  position: absolute;
-  inset: 0;
-  opacity: 0.18;
-  background-image:
-    linear-gradient(rgba(143, 199, 235, 0.6) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(143, 199, 235, 0.6) 1px, transparent 1px);
-  background-size: 48px 48px;
-  mix-blend-mode: screen;
-}
-
 .hero-fade {
   position: absolute;
   left: 0;
